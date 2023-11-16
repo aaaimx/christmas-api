@@ -50,7 +50,7 @@ schema_view = get_schema_view(
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
-router.register(r'villa', VillaViewSet)
+# router.register(r'villa', VillaViewSet)
 router.register(r'modules', ModulesViewSet)
 
 auth_urlpatterns = [

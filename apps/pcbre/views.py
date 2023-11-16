@@ -8,7 +8,7 @@ from .services import *
 from rest_framework.decorators import action
 
 # Create your views here.
-class VillaViewSet():
+class VillaViewSet(viewsets.ModelViewSet):
   queryset = villa.objects.all()
   serializer_class = VillaSerializer
   permission_classes = [permissions.AllowAny]
@@ -17,7 +17,7 @@ class VillaViewSet():
   def gpio(self, request, *args, **kargs):
     on_led()
 
-class ModulesViewSet():
+class ModulesViewSet(viewsets.ModelViewSet):
   queryset = modules.objects.all()
   serializer_class = ModulesSerializer
   permission_classes = [permissions.AllowAny]
