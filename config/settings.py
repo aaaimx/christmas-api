@@ -14,6 +14,7 @@ from pathlib import Path
 
 from .core.applist import *
 from .core.databases import *
+from .core.rest_framework import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
