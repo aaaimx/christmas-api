@@ -5,7 +5,7 @@ from .serializers import *
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
 from .services import *
-from rest_framework.decorations import action
+from rest_framework.decorators import action
 
 # Create your views here.
 class VillaViewSet():
