@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import include, path
 from rest_framework import routers
 from apps.accounts.views import *
+from apps.pcbre.views import *
 from django.conf.urls.static import static
 from django.conf.urls import url
 from django.conf import settings
@@ -49,6 +50,8 @@ schema_view = get_schema_view(
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
+router.register(r'villa', VillaViewSet)
+router.register(r'modules', ModulesViewSet)
 
 auth_urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
