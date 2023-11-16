@@ -6,8 +6,8 @@ class VillaSerializer(serializers.ModelSerializer):
     model = villa
     fields = '__all__'
 
-class VillaSerializer(serializers.ModelSerializer):
+class ModulesSerializer(serializers.ModelSerializer):
   class Meta:
-    model = villa
+    model = modules
     fields = '__all__'
   
